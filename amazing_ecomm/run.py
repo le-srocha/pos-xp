@@ -1,5 +1,9 @@
+from fastapi import FastAPI
+#from app.views.client_view import router as client_router
 from app import create_app
 from app.models.CRUD_cliente_model import CRUDClienteModel
+
+app = FastAPI()
 
 app = create_app()
 
